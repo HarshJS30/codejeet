@@ -1,7 +1,7 @@
-const API_KEY = 'e3b7f6179b69f6c206614216'; // Better to move to .env file
+const API_KEY = 'e3b7f6179b69f6c206614216';
 
 export const CurrencyConversion = async (fromCurrency, toCurrency, amount) => {
-    const response = await fetch(`/api/currency?path=pair/${fromCurrency}/${toCurrency}/${amount}`);
+    const response = await fetch(`https://api.exchangerate-api.com/v6/${API_KEY}/pair/${fromCurrency}/${toCurrency}/${amount}`);
     const data = await response.json();
     
     if (data.result === "success") {
@@ -12,7 +12,7 @@ export const CurrencyConversion = async (fromCurrency, toCurrency, amount) => {
 }
 
 export const getCurrencyCodes = async () => {
-    const response = await fetch(`/api/currency?path=codes`);
+    const response = await fetch(`https://api.exchangerate-api.com/v6/${API_KEY}/codes`);
     const data = await response.json();
 
     if (data.result === "success") {
