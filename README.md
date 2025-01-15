@@ -17,6 +17,7 @@ In the next steps, I plan to implement the feature for checking the price of any
 - **React**: For building the user interface.
 - **API**: For fetching real-time data for currency conversion.
 - **CSS**: For styling the application and making it responsive.
+- **Bootstrap**: For some styling of components.
 
 ## Getting Started
 
