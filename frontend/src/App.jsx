@@ -1,6 +1,6 @@
 import React from "react";
 import CurrencyConverter from "./components/CurrencyConverter";
-import './app.css'
+import './App.css'
 import Navbar from "./components/Navbar";
 
 function App(){
