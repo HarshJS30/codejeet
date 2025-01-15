@@ -15,8 +15,8 @@ const CurrencyConverter = () => {
             try {
                 const codes = await getCurrencyCodes();
                 setCurrencyCodes(codes);
-            } catch {
-                setError('Sorry, cant fetch codes!');
+            } catch(err){
+                setError(err);
             }
         };
         fetchCurrencyCodes();
