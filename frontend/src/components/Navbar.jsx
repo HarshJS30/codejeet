@@ -18,7 +18,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item">
             <a href="#services" className="navbar-link">
-              Stock Exchange 
+              Currency Quiz
             </a>
           </li>
           <li className="navbar-item">
